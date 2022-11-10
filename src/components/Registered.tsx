@@ -1,15 +1,11 @@
-import React from 'react';
-import Container from '@mui/material/Container';
-import { Button, Typography } from '@mui/material';
-
-interface UserLogin {
-  email: String;
-  password: String;
-}
+import React from 'react'
+import Container from '@mui/material/Container'
+import { Button, Typography } from '@mui/material'
+import { UserLogin } from '../types/Types'
 
 interface RegisteredProps {
-  data: UserLogin;
-  onRegisteredBack: Function;
+  data: UserLogin
+  onRegisteredBack: Function
 }
 
 const Registered = ({ data, onRegisteredBack }: RegisteredProps): JSX.Element => {
@@ -34,7 +30,7 @@ const Registered = ({ data, onRegisteredBack }: RegisteredProps): JSX.Element =>
         Back
       </Button>
     </Container>
-  );
-};
+  )
+}
 
-export default Registered;
+export default Registered

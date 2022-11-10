@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "lint": "eslint --fix src/**/*.{js,jsx,tsx}",
+    "lint": "DEBUG=eslint:cli-engine eslint --fix src/**/*.{js,jsx,tsx}",
     "format": "prettier --write src/**/*.{html,js,jsx,tsx,json,css}",
     "build": "tsc && vite build",
     "preview": "vite preview"
